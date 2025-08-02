@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import './styles.css';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
+import Section2 from '@/widgets/Section2';
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Section2/>
     </>
   );
 }
