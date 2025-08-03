@@ -5,6 +5,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import './styles.css';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
+import DigitalSlider from '@/widgets/Digital and operational transformation';
+import ContactSection from '@/widgets/ContactUs';
+
 
 export default function App() {
   return (
@@ -52,6 +55,8 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <DigitalSlider/>
+      <ContactSection/>
     </>
   );
 }
