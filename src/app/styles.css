@@ -40,6 +40,12 @@ body {
 p {
     font-family: "Montserrat";
 }
+.palo {
+    font-family: "Palo"
+}
+.playfair {
+    font-family: "Playfair";
+}
 
 .nav-links {
     font-family: "Montserrat";

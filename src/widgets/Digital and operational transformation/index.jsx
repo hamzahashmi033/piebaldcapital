@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import SwiperBtn from "../SwiperBtn";
+
 
 const serviceCards = [
   {
@@ -53,31 +55,31 @@ const serviceCards = [
 
 export default function DigitalSlider() {
   return (
-    <div className="w-screen bg-[#f0eee8] mt-18 ">
+    <div className="w-screen bg-[#f0eee8] mt-18 pb-20">
       <div className="py-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-center text-[#c86e3b] font-bold py-4">
+        <h2 className="text-3xl  md:text-4xl lg:text-5xl main-head text-center text-[#c86e3b] font-bold py-4">
           Digital and Operational Transformation
         </h2>
-        <p className="text-base md:text-lg lg:text-lg text-center text-black">
+        <p className="text-base md:text-lg lg:text-lg px-8 md:px-6  text-center text-black">
           We enhance our clients' operational efficiency through advanced
           technological
-          <br className="" />
+          <br/>
           solutions, process automation, and organizational optimization.
         </p>
       </div>
-      <div className="w-full py-10">
+      <div className="w-full py-10 ">
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           // pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          className="w-[90%] max-w-[1400px] mx-auto"
+          className="w-[90%] max-w-[1400px] mx-auto rounded-3xl shadow-2xl"
         >
           {serviceCards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col lg:flex-row bg-white  overflow-hidden shadow-2xl min-h-[500px]">
+              <div className="flex flex-col lg:flex-row bg-[#f0eee8] overflow-hidden rounded-3xl shadow-4xl min-h-[530px]">
                 <div className="relative w-full lg:w-1/2 h-72 lg:h-auto">
                   <Image
                     src={card.image}
@@ -91,7 +93,7 @@ export default function DigitalSlider() {
                 </div>
                 <div className="p-10 w-full lg:w-1/2 bg-[#e8e4d4] text-white flex flex-col justify-between">
                   <div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold mb-4 text-[#c86e3b]">
+                    <h2 className="text-2xl md:text-3xl lg:text-3xl playfair font-semibold mb-4 text-[#c86e3b]">
                       {card.title}
                     </h2>
                     {/* <p className="text-lg mb-4">{card.description}</p> */}
@@ -99,14 +101,12 @@ export default function DigitalSlider() {
                       {card.bullets.map((point, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <IoIosCheckmarkCircleOutline className="text-white-400 mt-1 text-xl shrink-0" />
-                          <span>{point}</span>
+                          <p>{point}</p>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <button className="mt-8 inline-flex items-center gap-2 text-white bg-[#c86e3b] hover:bg-orange-900 px-5 py-3 rounded-lg text-base font-semibold transition-all">
-                    {card.cta} →
-                  </button>
+                  <SwiperBtn cta={card.cta} />
                 </div>
               </div>
             </SwiperSlide>

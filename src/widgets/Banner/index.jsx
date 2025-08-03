@@ -48,7 +48,7 @@ const Banner = () => {
                         We deliver strategic solutions for business expansion and real estate development across the U.S., Spain, and Mexico, offering local insights and expert execution to drive growth and maximize investment value.
                     </p>
                     <div className='mt-3'>
-                        <Button />
+                        <Button text='Get in Touch' href="/contact" />
                     </div>
                 </div>
             </div>
