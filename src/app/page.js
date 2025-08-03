@@ -5,11 +5,14 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import './styles.css';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
+import About from '@/widgets/AboutUs';
 
 export default function App() {
   return (
     <>
+      
       <section className="w-screen border p-12"></section>
+      
 
       <Swiper
         effect="coverflow"
@@ -52,6 +55,7 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <About/>
     </>
   );
 }
