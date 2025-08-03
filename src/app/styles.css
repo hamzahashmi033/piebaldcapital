@@ -41,6 +41,10 @@ p {
     font-family: "Montserrat";
 }
 
+h2 {
+    font-family: "Playfair";
+}
+
 .nav-links {
     font-family: "Montserrat";
 }
@@ -62,5 +66,5 @@ p {
     /* margin-top: 10px; */
     border-bottom-left-radius: 350px;
     border-bottom-right-radius: 350px;
-    
+
 }
