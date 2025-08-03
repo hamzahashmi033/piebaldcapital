@@ -1,0 +1,12 @@
+/* body {
+  font-family: 'Palo', sans-serif;
+} */
+@font-face {
+    font-family: "Palo";
+    src: url('/fonts/Palo/palo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url('/fonts/Playfair/playfair.ttf') format('truetype');
+}

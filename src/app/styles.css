@@ -4,19 +4,63 @@
   padding-bottom: 50px;
 } */
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 40%;
-  /* height: 70%; */
-  position: relative;
+body {
+    overflow-x: hidden;
 }
 
-.swiper-slide img {
+@font-face {
+    font-family: "Palo";
+    src: url('/fonts/Palo/palo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url('/fonts/Playfair/playfair.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('/fonts/Playfair/Poppins.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Recoleta";
+    src: url('/fonts/eecoleta/Recoleta.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('/fonts/Montserrat/Montserrat.ttf') format('truetype');
+}
+
+.main-head {
+    font-family: 'Recoleta';
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+.nav-links {
+    font-family: "Montserrat";
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    /* height: 70%; */
+    position: relative;
+}
+
+/* .swiper-slide img {
   display: block;
   width: 100%;
-}
+} */
 
-.mySwiper{
+.mySwiper {
     /* margin-top: 10px; */
+    border-bottom-left-radius: 350px;
+    border-bottom-right-radius: 350px;
+    
 }
