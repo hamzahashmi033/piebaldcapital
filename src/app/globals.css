@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@font-face {
+/* @font-face {
   font-family: "Playfair Display";
   src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 400;
@@ -16,9 +16,27 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .font-Playfair{
   font-family: 'Playfair Display';
 }
+.font-Montserrat{
+  font-family: 'Montserrat';
+}
+.font-Poppins{
+  font-family: 'Poppins';
+} */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
