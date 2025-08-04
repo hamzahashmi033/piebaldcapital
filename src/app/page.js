@@ -1,5 +1,5 @@
-'use client'
-import React from 'react';
+"use client";
+import React from "react";
 
 import Header from '@/widgets/Header';
 import Banner from '@/widgets/Banner';
@@ -10,6 +10,13 @@ import Map from '@/widgets/Map';
 import Section2 from '@/widgets/Section2';
 import Section3 from '@/widgets/Section3';
 import About from '@/widgets/AboutUs';
+import Header from "@/widgets/Header";
+import Banner from "@/widgets/Banner";
+import "./styles.css";
+import ScrollContext from "@/context/SmoothScrollContext";
+import CoreServicesPreview from "@/widgets/CoreServicesPreview";
+import DigitalSlider from "@/widgets/Digital and operational transformation";
+import ContactSection from "@/widgets/ContactUs";
 
 export default function App() {
   return (
@@ -21,8 +28,10 @@ export default function App() {
         <Section2 />
         <Section3 />
         <Map />
+        <DigitalSlider />
         <About/>
 
+        <ContactSection />
       </ScrollContext>
     </>
   );

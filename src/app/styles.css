@@ -41,6 +41,12 @@ body {
 p {
     font-family: "Montserrat";
 }
+.palo {
+    font-family: "Palo"
+}
+.playfair {
+    font-family: "Playfair";
+}
 
 h2 {
     font-family: "Playfair";
