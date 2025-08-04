@@ -9,6 +9,7 @@ import CoreServicesPreview from '@/widgets/CoreServicesPreview';
 import Map from '@/widgets/Map';
 import Section2 from '@/widgets/Section2';
 import Section3 from '@/widgets/Section3';
+import About from '@/widgets/AboutUs';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Section2 />
         <Section3 />
         <Map />
+        <About/>
 
       </ScrollContext>
     </>
