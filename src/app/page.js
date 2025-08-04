@@ -13,6 +13,7 @@ import About from '@/widgets/AboutUs';
 import "./styles.css";
 import DigitalSlider from "@/widgets/Digital and operational transformation";
 import ContactSection from "@/widgets/ContactUs";
+import Footer from "@/widgets/Footer";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <About/>
 
         <ContactSection />
+        <Footer/>
       </ScrollContext>
     </>
   );
