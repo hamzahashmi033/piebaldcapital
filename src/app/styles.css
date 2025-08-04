@@ -34,7 +34,8 @@ body {
 }
 
 .main-head {
-    font-family: 'Recoleta';
+    font-family: 'Playfair';
+    font-weight: 600;
 }
 
 p {

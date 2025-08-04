@@ -19,11 +19,35 @@
     border-radius: 99px;
     position: relative;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    width: 200px;
+    width: 212px;
+    color: white;
 }
 
+@media (max-width:480px) {
+    .btn {
+        padding: 16px 16px 16px 24px;
+        margin: auto;
+    }
+
+    .btn svg {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width:768px) {
+    .btn {
+        padding: 20px 20px 20px 24px;
+        margin: auto;
+    }
+
+    .btn svg {
+        margin-left: 7px;
+    }
+}
+
+
 .btn .text {
-    color: black;
+    /* color: black; */
     line-height: 1;
     position: relative;
     z-index: 5;
@@ -37,6 +61,11 @@
     transform: rotate(0deg) translateX(0);
     transform-origin: left;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    fill: black;
+    stroke: black;
+    color: black;
+
+
 }
 
 .btn::before {
@@ -64,6 +93,10 @@
 
 .btn:hover svg {
     transform: rotate(45deg) translateX(-8px);
+}
+
+.btn:hover {
+    color: black;
 }
 
 .btn:hover::before {

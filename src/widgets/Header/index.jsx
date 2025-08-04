@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
                 
                 {/* Desktop Navigation - visible on medium screens and up */}
-                <div className="hidden md:flex gap-6 h-full items-center">
+                <div className="hidden lg:flex gap-6 h-full items-center">
                     {navLinks.map((link, index) => (
                         <div key={index}>
                             <a 
@@ -35,7 +35,7 @@ const Header = () => {
 
                 {/* Mobile menu button - visible on small screens */}
                 <button 
-                    className="md:hidden p-2 focus:outline-none"
+                    className="lg:hidden p-2 focus:outline-none"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const Header = () => {
 
             {/* Mobile Navigation - appears when menu button is clicked */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-white w-full px-4 pb-4">
+                <div className="lg:hidden bg-white w-full px-4 pb-4">
                     <div className="flex flex-col space-y-3">
                         {navLinks.map((link, index) => (
                             <a 
