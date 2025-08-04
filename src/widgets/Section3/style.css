@@ -1,0 +1,81 @@
+.card {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background: #ffffff;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 75%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #c86e3b;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    font-family: 'Monstserrate';
+}
+
+.text-body {
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrate';
+}
+
+.text-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Playfair';
+}
+
+.card:hover {
+    border-color: #c86e3b;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+@media (max-width:480px){
+    .card {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    background: #ffffff;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-top: 20px;
+}
+.text-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair';
+    text-align: center;
+}
+.text-body{
+    font-size: 14px;
+}
+}
