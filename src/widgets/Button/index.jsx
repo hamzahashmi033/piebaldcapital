@@ -1,5 +1,5 @@
 import "./style.css";
-const Button = ({ text, href = "#",widthFull=false }) => {
+const Button = ({ text, href = "#", widthFull = false }) => {
   return (
     <>
       <div id="wrapper">
@@ -10,19 +10,20 @@ const Button = ({ text, href = "#",widthFull=false }) => {
               width="16"
               height="16"
               viewBox="0 0 16 16"
-              fill="none"
+              fill="black"
               xmlns="http://www.w3.org/2000/svg"
+              // color="black"
             >
               <path
                 d="M4.66669 11.3334L11.3334 4.66669"
-                stroke="white"
+                stroke="black"
                 stroke-width="1.33333"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M4.66669 4.66669H11.3334V11.3334"
-                stroke="white"
+                stroke="black"
                 stroke-width="1.33333"
                 stroke-linecap="round"
                 stroke-linejoin="round"

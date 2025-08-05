@@ -12,7 +12,7 @@ const Header = () => {
     ];
 
     return (
-        <section className="w-screen bg-white sticky top-0 z-50 shadow-sm">
+        <section className="w-screen bg-white sticky top-0 z-[1000] shadow-sm">
             <div className='w-[90%] lg:w-[85%] m-auto  flex justify-between items-center'>
                 <div className='logo'>
                     <img src='/images/logo/logo.webp' className='w-28 p-2' alt="Company Logo" />

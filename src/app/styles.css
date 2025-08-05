@@ -41,14 +41,24 @@ body {
 p {
     font-family: "Montserrat";
 }
+
 .palo {
     font-family: "Palo"
 }
+
 .playfair {
     font-family: "Playfair";
 }
 
 h2 {
+    font-family: "Playfair";
+}
+
+.industry-text {
+    font-family: "Montserrat";
+}
+
+h3 {
     font-family: "Playfair";
 }
 

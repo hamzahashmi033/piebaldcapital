@@ -55,9 +55,9 @@ const serviceCards = [
 
 export default function DigitalSlider() {
   return (
-    <div className="w-screen bg-[#f0eee8] mt-18 pb-20">
-      <div className="py-12">
-        <h2 className="text-3xl  md:text-4xl lg:text-5xl main-head text-center text-[#c86e3b] font-bold py-4">
+    <div className="w-screen bg-[#e8e4d4] pb-26">
+      <div className="py-12 ">
+        <h2 className="text-3xl  md:text-4xl lg:text-5xl main-head text-center text-[#c86e3b] mt-16 font-bold py-4">
           Digital and Operational Transformation
         </h2>
         <p className="text-base md:text-lg lg:text-lg px-8 md:px-6  text-center text-black">
@@ -75,11 +75,11 @@ export default function DigitalSlider() {
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          className="w-[90%] max-w-[1400px] mx-auto rounded-3xl shadow-2xl"
+          className="w-[90%] max-w-[1400px] mx-auto rounded-3xl shadow-2xl bg-white"
         >
           {serviceCards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col lg:flex-row bg-[#f0eee8] overflow-hidden rounded-3xl shadow-4xl min-h-[530px]">
+              <div className="flex flex-col lg:flex-row overflow-hidden rounded-3xl shadow-4xl min-h-[530px]">
                 <div className="relative w-full lg:w-1/2 h-72 lg:h-auto">
                   <Image
                     src={card.image}
@@ -91,9 +91,9 @@ export default function DigitalSlider() {
                     {card.label}
                   </div>
                 </div>
-                <div className="p-10 w-full lg:w-1/2 bg-[#e8e4d4] text-white flex flex-col justify-between">
+                <div className="p-10 w-full lg:w-1/2 bg-white text-white flex flex-col justify-between">
                   <div>
-                    <h2 className="text-2xl md:text-3xl lg:text-3xl playfair font-semibold mb-4 text-[#c86e3b]">
+                    <h2 className="text-2xl md:text-3xl lg:text-3xl playfair font-bold mb-4 text-[#c86e3b]">
                       {card.title}
                     </h2>
                     {/* <p className="text-lg mb-4">{card.description}</p> */}
@@ -106,7 +106,9 @@ export default function DigitalSlider() {
                       ))}
                     </ul>
                   </div>
+                  <div className="pt-10">
                   <SwiperBtn cta={card.cta} />
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
