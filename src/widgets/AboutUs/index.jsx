@@ -14,7 +14,7 @@ const About = () => {
                     <h2 className='text-[#c86e3b] text-6xl font-bold'>About Us</h2>
                 </div>
 
-                <div className="relative w-[33%]  border border-r-3 border-l-0 border-t-6  border-b-0 border-[#c86e3b]  p-6 rounded-lg" >
+                <div className="relative w-[33%] border-r-3 border-l-0 border-t-6  border-b-0 border-[#c86e3b]  p-6 rounded-lg" >
 
                     <div className="absolute top-0 left-0 bg-[#c86e3b] text-black font-bold text-xs px-6 py-3 tracking-widest rounded-bl-lg rounded-br-lg">
                         <h2 className='text-lg '>Our Story</h2>
