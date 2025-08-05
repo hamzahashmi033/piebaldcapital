@@ -32,6 +32,7 @@
     opacity: 0;
     transition: 0.3s ease-out;
     font-family: 'Monstserrate';
+    cursor: pointer;
 }
 
 .text-body {
