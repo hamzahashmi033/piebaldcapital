@@ -22,32 +22,32 @@ const array = [
 gsap.registerPlugin(useGSAP, SplitText)
 const Banner = () => {
     useGSAP(() => {
-        // Split the text into characters, words, or lines
+        // Split the text into characters
         const split = new SplitText('.main-head', {
-            type: 'chars,words,lines', // Choose what to split (try different options)
-            linesClass: 'overflow-hidden' // Optional: for line-based animations
+            type: 'chars,words,lines',
+            linesClass: 'overflow-hidden'
         });
-      
 
-        // Animation for each character/word
-        gsap.from(split.chars, { // or split.words or split.lines
+        // Create a timeline for sequenced animations
+        const tl = gsap.timeline();
+
+        // Animation for heading characters
+        tl.from(split.chars, {
             y: 100,
             opacity: 0,
             duration: 0.8,
             ease: 'back.out(1.5)',
-            stagger: 0.02, // Time between each element's animation
-            rotation: 10, // Optional: add some rotation
-            scale: 0.5 // Optional: start small and scale up
+            stagger: 0.02,
+            rotation: 10,
+            scale: 0.5
         });
-        gsap.from(".para", { // or split.words or split.lines
-            x: -200,
+
+        tl.from(".para, .button-main", {
+            duration: 0.8,
+            y: 20,
             opacity: 0,
-            duration: 1.2,
-            ease: 'back.out(1.5)',
-            stagger: 0.02, // Time between each element's animation
-            // rotation: 10, // Optional: add some rotation
-            scale: 0.5 // Optional: start small and scale up
-        });
+            ease: "power2.out"
+        }, "-=1.4");
 
 
     });
@@ -80,10 +80,10 @@ const Banner = () => {
                 <div className='w-[85%] m-auto h-[85%] flex flex-col justify-center md:items-center lg:items-start'>
                     <h1 className='text-black text-center text-[32px] lg:text-[100px]  md:text-[48px] lg:text-left leading-none main-head'> Financial Services & Real Estate Development
                     </h1>
-                    <p className='text-black text-center text-sm w-[100%] lg:text-lg para lg:text-left md:w-[80%] lg:w-[80%]  mt-3'>
+                    <p className='text-black text-center text-sm w-[100%] lg:text-xl para lg:text-left md:w-[80%] lg:w-[80%]  mt-3'>
                         We deliver strategic solutions for business expansion and real estate development across the U.S., Spain, and Mexico, offering local insights and expert execution to drive growth and maximize investment value.
                     </p>
-                    <div className='mt-3'>
+                    <div className='mt-3 button-main'>
                         <Button text='Get in Touch' href="/contact" />
                     </div>
                 </div>

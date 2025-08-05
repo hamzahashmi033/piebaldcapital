@@ -15,7 +15,7 @@ const Section3 = () => {
                         </div>
                     </div>
                     <div className=" w-[100%] lg:w-[50%] md:w-[40%] items-center mt-8 mr-2 text-2xl lg:7xl md:text-6xl sm:text-4xl ">
-                        <h2 className="font-Playfair mb-8 text-center lg:text-start md:text-start">Comprehensive Real Estate Development</h2>
+                        <h2 className="font-Playfair mb-8 text-center lg:text-start md:text-start font-bold text-[#c86e3b]">Comprehensive Real Estate Development</h2>
                         <p className=" font-Poppins text-sm lg:text-xl md:text-lg sm:text-md text-center lg:text-start md:text-start" >
                             We support projects from concept to completion, combining technical expertise, strategic vision, and regulatory compliance in international markets.
                         </p>
@@ -24,7 +24,7 @@ const Section3 = () => {
             </div>
 
             <div className="w-[90%] flex justify-between  m-auto flex-col lg:flex-row md:flex-row  mt-8 mb-26">
-                <div class="card" style={{height:"500px"}}>
+                <div class="card" style={{ height: "500px" }}>
                     <div class="card-details">
                         <p class="text-title  md:mb-9 lg:mb-9">Development Consulting</p>
                         <p class="text-body ">
@@ -49,7 +49,7 @@ const Section3 = () => {
                     <button class="card-button">Request Project Analysis</button>
                 </div>
 
-                <div class="card" style={{height:"500px"}}>
+                <div class="card" style={{ height: "500px" }}>
                     <div class="card-details">
                         <p class="text-title mb-3.5">Early-Stage Project Management</p>
                         <p class="text-body">
@@ -74,7 +74,7 @@ const Section3 = () => {
                     <button class="card-button">Start Project Management</button>
                 </div>
 
-                <div class="card" style={{height:"500px"}}>
+                <div class="card" style={{ height: "500px" }}>
                     <div class="card-details">
                         <p class="text-title">Planning and Regulatory Compliance</p>
                         <p class="text-body">

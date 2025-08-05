@@ -151,7 +151,7 @@ const IndustryInsights = () => {
                                 </div>
                             </div>
                             <div className="flex z-10 h-full  w-[90%] m-auto p-2 items-center">
-                                <h2 className="text-white z-10 text-3xl font-bold industry-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h2>
+                                <h2 className="text-white z-10 text-3xl font-bold industry-text">Lorem ipsum, dolor sit amet consectetur. </h2>
                             </div>
 
                         </div>

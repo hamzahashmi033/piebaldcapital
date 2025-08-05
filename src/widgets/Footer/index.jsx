@@ -2,13 +2,13 @@ import Button from "../Button";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e8e4d4] w-screen py-12 px-6 md:px-12 lg:px-12">
-      <div className="w-[90%] mx-auto flex flex-col lg:flex-row justify-center gap-12">
+    <footer className="border w-screen py-12 px-6 md:px-12 lg:px-12">
+      <div className="w-[90%] mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="flex-1">
           <img className="h-28" src="/images/logo/logo.webp" alt="Company Logo" />
           <div className="text-sm leading-relaxed text-gray-800 space-y-4">
             <div className="w-[85%] md:w-[70%] lg:w-[50%]">
-              <p className="text-[#c86e3b] font-semibold">Piebald Capital</p>
+              <p className="text-[#c86e3b] text-lg mt-3 font-semibold">Piebald Capital</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicin</p>
             </div>
             <div>
@@ -18,28 +18,29 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex-1 pt-3">
-          <h2 className="text-[#c86e3b] text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
+        <div className="w-[50%]  pt-3 ">
+          <div className="flex flex-col">
+            <h2 className="text-[#c86e3b] text-center text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
+            <form className="bg-white w-[75%] m-auto rounded-full flex items-center  shadow-md">
+              <input
+                type="email"
+                required
+                placeholder="Enter Your Email"
+                className="bg-transparent px-4 py-3 w-full rounded-full focus:outline-none text-sm text-gray-800"
+              />
+              <button
+                type="submit"
+                className="bg-[#c86e3b] hover:bg-[#e8e4d4] hover:text-black text-white px-3 md:px-6 lg:px-6 py-3 rounded-full text-sm font-semibold transition-all whitespace-nowrap"
+              >
+                Sign Up →
+              </button>
+            </form>
 
-          <form className="bg-white w-[75%] rounded-full flex items-center  shadow-md">
-            <input
-              type="email"
-              required
-              placeholder="EMAIL*"
-              className="bg-transparent px-4 py-3 w-full rounded-full focus:outline-none text-sm text-gray-800"
-            />
-            <button
-              type="submit"
-              className="bg-[#c86e3b] hover:bg-[#e8e4d4] hover:text-black text-white px-3 md:px-6 lg:px-6 py-3 rounded-full text-sm font-semibold transition-all whitespace-nowrap"
-            >
-              Sign Up →
-            </button>
-          </form>
-
-          <p className="text-xs text-gray-600 mt-4 pr-18 md:pr-36 lg:pr-40">
-            By submitting this form, you are consenting to receive marketing emails from:
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. You can unsubscribe at any time.
-          </p>
+            <p className="text-xs text-center m-auto text-gray-600 mt-4 w-[80%]">
+              By submitting this form, you are consenting to receive marketing emails from:
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. You can unsubscribe at any time.
+            </p>
+          </div>
         </div>
       </div>
 
