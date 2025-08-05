@@ -15,6 +15,7 @@ import DigitalSlider from "@/widgets/Digital and operational transformation";
 import ContactSection from "@/widgets/ContactUs";
 import IndustryInsights from "@/widgets/IndustryInsights";
 import Footer from "@/widgets/Footer";
+import ContactUs from "@/widgets/ContactUs1/ContactUs";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <About/>
         <IndustryInsights/>
         <ContactSection />
+        <ContactUs/>
         <Footer/>
       </ScrollContext>
     </>
