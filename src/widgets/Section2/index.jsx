@@ -12,7 +12,7 @@ const Section2 = () => {
                             We specialize in financial structuring, mergers and acquisitions, and corporate restructuring. Our team supports companies in strategic decisions to enhance financial health and maximize shareholder value.
                         </p>
                     </div>
-                    <div className="w-[100%] lg:w-[50%] md:w-[50%] h-[450px]">
+                    <div className="w-[100%] lg:w-[50%] md:w-[50%] h-[450px]" >
                         <div class="relative flex justify-center items-center  p-8 ">
                             <div class="absolute z-10 transform  translate-x-32 top-[200px] -translate-y-1/2">
                                 <div class=" bg-blue-600 rounded-[20px] p-2 shadow-2xl">
