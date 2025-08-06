@@ -1,55 +1,158 @@
-import Button from "../Button";
+// components/Footer/index.jsx
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="border w-screen py-12 px-6 md:px-12 lg:px-12">
-      <div className="w-[90%] mx-auto flex flex-col lg:flex-row justify-between items-center">
-        <div className="flex-1">
-          <img className="h-28" src="/images/logo/logo.webp" alt="Company Logo" />
-          <div className="text-sm leading-relaxed text-gray-800 space-y-4">
-            <div className="w-[85%] md:w-[70%] lg:w-[50%]">
-              <p className="text-[#c86e3b] text-lg mt-3 font-semibold">Piebald Capital</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicin</p>
-            </div>
-            <div>
-              <p><span className="font-semibold">Tel:</span> +1 (786) 612-6784</p>
-              <p><span className="font-semibold">Email:</span> <a href="mailto:info@company.com" className="underline hover:text-[#c86e3b]">info@company.com</a></p>
+    <footer className="relative bg-black text-white py-16 overflow-hidden nav-links">
+      <video
+        className="absolute inset-0 object-contain transform scale-260 w-full h-full z-0 opacity-10 "
+        src="/videos/footer-bg.webm"
+        autoPlay
+        loop
+        muted
+        playsInline
+        
+      />
+      <div className="absolute inset-0 bg-[#c86e3b] opacity-30 z-10 "></div>
+
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="border-b border-gray-600 pb-12 mb-12 grid md:grid-cols-3 lg:grid-cols-5 gap-8  md:gap-6 lg:gap-8 text-center md:text-left">
+          <div className="col-span-2 md:col-span-1">
+            <h4 className="text-2xl font-bold mb-2">AWARDS</h4>
+            <div className="text-sm">
+              <p>x2 Nominee</p>
             </div>
           </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">10x Awards</h4>
+            <p className="text-sm">Site of the Day</p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">10x Awards</h4>
+            <p className="text-sm">Mobile Excellence</p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">3x Awards</h4>
+            <p className="text-sm">Site of the Day</p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">37x Awards</h4>
+            <p className="text-sm">Honorable Mention</p>
+          </div>
         </div>
+        <div className="border border-gray-600 pb-12 mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="border-r border-gray-600 px-4 py-2">
+            <h4 className="text-2xl font-bold mb-4">About Us</h4>
+            <div className="space-y-4"></div>
+            <h4 class=" font-medium flex items-center gap-1">
+              Email
+            </h4>
+            <p className="hover:text-[#c86e3b] pb-6">info@piebaldcapital.com</p>
 
-        <div className="w-[50%]  pt-3 ">
-          <div className="flex flex-col">
-            <h2 className="text-[#c86e3b] text-center text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
-            <form className="bg-white w-[75%] m-auto rounded-full flex items-center  shadow-md">
-              <input
-                type="email"
-                required
-                placeholder="Enter Your Email"
-                className="bg-transparent px-4 py-3 w-full rounded-full focus:outline-none text-sm text-gray-800"
-              />
-              <button
-                type="submit"
-                className="bg-[#c86e3b] hover:bg-[#e8e4d4] hover:text-black text-white px-3 md:px-6 lg:px-6 py-3 rounded-full text-sm font-semibold transition-all whitespace-nowrap"
-              >
-                Sign Up →
-              </button>
-            </form>
+            <h4 class="font-medium flex items-center gap-1">
+              Phone 
+            </h4>
+            <p className="hover:text-[#c86e3b] pb-6">+1 (786) 612-6784</p>
 
-            <p className="text-xs text-center m-auto text-gray-600 mt-4 w-[80%]">
-              By submitting this form, you are consenting to receive marketing emails from:
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. You can unsubscribe at any time.
+            <h4 class="font-medium flex items-center gap-1">
+              Address
+              <span ></span>
+            </h4>
+            <p className="hover:text-[#c86e3b]">
+              Lorem ipsum dolor sit 
             </p>
           </div>
+          <div className="border-r border-gray-600 px-4 py-2 ">
+            <h4 className="text-2xl font-bold mb-4 ">Links</h4>
+            <ul className="space-y-4 text-white nav-links">
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Financial Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Real Estate Development
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Digital Tranformation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="border-r border-gray-600 px-4 py-2">
+            <h4 className="text-2xl font-bold mb-4">Social Media</h4>
+            <ul className="space-y-4 text-white nav-links">
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className=" px-4 py-2">
+            <h4 className="text-2xl font-bold mb-4">Legal</h4>
+            <ul className="space-y-4 text-white nav-links">
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Terms of Use
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#c86e3b] transition-colors">
+                  Cookie Policy
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div className="w-[90%] mx-auto mt-10 border-t border-[#d1cfc2] pt-6 text-center text-sm text-gray-700">
-        <div className="mb-2 space-x-4">
-          <a href="#" className="underline hover:text-[#c86e3b]">Privacy Notice</a>
-          <a href="#" className="underline hover:text-[#c86e3b]">Terms and Conditions</a>
+        <div className="flex justify-center items-center text-sm text-gray-400">
+          <p>Copyright © 2025 Piebald Capital Partners. All rights Reserved.</p>
         </div>
-        <p>Copyright © 2025 Piebald Capital Partners. All rights Reserved.</p>
       </div>
     </footer>
   );
