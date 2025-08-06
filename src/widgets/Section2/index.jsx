@@ -69,7 +69,7 @@ const Section2 = () => {
                         </p>
                     </div>
                     <div className="w-[100%] md:w-[42%] ">
-                        <img src="/images/Section2/123.png" alt="" className="w-[80%] lg:w-[90%] m-auto image3" />
+                        <img src="/images/Section2/real_state1.png" alt="" className="w-[80%] lg:w-[90%] m-auto image3" />
                     </div>
                 </div>
             </div>
