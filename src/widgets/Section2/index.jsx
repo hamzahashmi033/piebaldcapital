@@ -8,22 +8,22 @@ const Section2 = () => {
 
                 <div className="w-[100%] mx-auto flex flex-col lg:flex-row md:flex-row items-center  justify-around ">
                     <div className=" w-[100%] lg:w-[50%] md:w-[50%] items-center mt-8 mr-2 text-2xl lg:7xl md:text-6xl sm:text-4xl ">
-                        <h2 className="mb-8 text-center lg:text-start md:text-start font-bold text-[#c86e3b]">Corporate Financial Services </h2>
+                        <h2 className="mb-8 text-4xl lg:text-[58px] text-center lg:text-start md:text-start font-bold text-[#c86e3b]">Corporate Financial Services Experts</h2>
                         <p className=" font-Poppins text-sm lg:text-xl md:text-lg sm:text-md text-center lg:text-start md:text-start" >
                             We specialize in financial structuring, mergers and acquisitions, and corporate restructuring. Our team supports companies in strategic decisions to enhance financial health and maximize shareholder value.
                         </p>
                     </div>
                     <div className="w-[100%] md:w-[42%] ">
-                        <img src="/images/Section2/financial.png" alt="" />
+                        <img src="/images/Section2/financial.png" alt="" className="w-[80%] lg:w-[90%] m-auto"/>
                     </div>
                 </div>
             </div>
 
-            <div className="w-[90%] flex justify-between  m-auto flex-col lg:flex-row md:flex-row  mt-8 ">
+            <div className="w-[100%] lg:w-[90%] flex justify-center items-center lg:justify-between  m-auto flex-col lg:flex-row md:flex-row  mt-8 ">
                 <div class="card">
                     <div class="card-details">
                         <p class="text-title ">Capital Structuring</p>
-                        <p class="text-body ">
+                        <p class="text-body">
                             <ul className=' '  >
                                 {[
                                     "Optimal debt/equity mix for capital needs.",

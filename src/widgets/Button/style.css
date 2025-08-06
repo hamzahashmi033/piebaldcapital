@@ -19,31 +19,11 @@
     border-radius: 99px;
     position: relative;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    width: 212px;
+    width: 215px;
     color: white;
 }
 
-@media (max-width:480px) {
-    .btn {
-        padding: 16px 16px 16px 24px;
-        margin: auto;
-    }
 
-    .btn svg {
-        margin-left: 7px;
-    }
-}
-
-@media (max-width:768px) {
-    .btn {
-        padding: 20px 20px 20px 24px;
-        margin: auto;
-    }
-
-    .btn svg {
-        margin-left: 7px;
-    }
-}
 
 
 .btn .text {
@@ -52,7 +32,7 @@
     position: relative;
     z-index: 5;
     margin-right: 32px;
-     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
 }
 
 .btn svg {
@@ -65,9 +45,33 @@
     fill: black;
     stroke: black;
     color: black;
-    margin-left: 12px;
+    margin-left: 16px;
 
 
+}
+
+
+
+@media (max-width:768px) {
+    .btn {
+        padding: 20px 20px 20px 24px;
+        margin: auto;
+    }
+
+    .btn svg {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width:480px) {
+    .btn {
+        padding: 16px 16px 16px 24px;
+        margin: auto;
+    }
+
+    .btn svg {
+        margin-left: 22px;
+    }
 }
 
 .btn::before {
@@ -92,9 +96,11 @@
 .btn.light::before {
     background-color: #154633;
 }
-.btn:hover{
+
+.btn:hover {
     color: black;
 }
+
 .btn:hover svg {
     transform: rotate(45deg) translateX(-8px);
 }

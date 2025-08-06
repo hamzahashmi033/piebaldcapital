@@ -57,7 +57,7 @@ export default function DigitalSlider() {
   return (
     <div className="w-screen bg-[#e8e4d4] pb-26">
       <div className="py-12 ">
-        <h2 className="text-3xl  md:text-4xl lg:text-5xl main-head text-center text-[#c86e3b] mt-16 font-bold py-4">
+        <h2 className="text-3xl  md:text-4xl lg:text-5xl text-center text-[#c86e3b] mt-16 font-bold py-4">
           Digital and Operational Transformation
         </h2>
         <p className="text-base md:text-lg lg:text-lg px-8 md:px-6  text-center text-black">

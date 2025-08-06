@@ -8,6 +8,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { SplitText } from 'gsap/all';
+import "./style.css"
 
 
 const array = [
@@ -23,7 +24,7 @@ gsap.registerPlugin(useGSAP, SplitText)
 const Banner = () => {
     useGSAP(() => {
         // Split the text into characters
-        const split = new SplitText('.main-head', {
+        const split = new SplitText('.head1', {
             type: 'chars,words,lines',
             linesClass: 'overflow-hidden'
         });
@@ -47,7 +48,7 @@ const Banner = () => {
             y: 20,
             opacity: 0,
             ease: "power2.out"
-        }, "-=1.4");
+        }, "-=0.8");
 
 
     });
@@ -78,9 +79,9 @@ const Banner = () => {
             <div className="absolute inset-0 bg-[#f0eee8] opacity-55 z-10" />
             <div className='absolute inset-0  z-10 w-full r'>
                 <div className='w-[85%] m-auto h-[85%] flex flex-col justify-center md:items-center lg:items-start'>
-                    <h1 className='text-black text-center text-[32px] lg:text-[100px]  md:text-[48px] lg:text-left leading-none main-head'> Financial Services & Real Estate Development
+                    <h1 className='text-black text-center text-[30px] lg:text-[100px] head1  md:text-[48px] lg:text-left leading-none main-head'> Financial Services & <br /> Real Estate Development
                     </h1>
-                    <p className='text-black text-center text-sm w-[100%] lg:text-xl para lg:text-left md:w-[80%] lg:w-[80%]  mt-3'>
+                    <p className='text-black text-center text-[14px] w-[100%] lg:text-xl para lg:text-left md:w-[80%] lg:w-[80%]  mt-3'>
                         We deliver strategic solutions for business expansion and real estate development across the U.S., Spain, and Mexico, offering local insights and expert execution to drive growth and maximize investment value.
                     </p>
                     <div className='mt-3 button-main'>
