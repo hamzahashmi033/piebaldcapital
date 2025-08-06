@@ -1,19 +1,17 @@
 "use client";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Controller } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 import Image from "next/image";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import SwiperBtn from "../SwiperBtn";
-
 
 const serviceCards = [
   {
     image: "/images/digital/AI.jpg",
     label: "AI & SaaS",
     title: "AI and SaaS Solutions",
-    description: "",
     bullets: [
       "Specialized CRM implementation to strengthen customer relationships and centralize commercial information.",
       "ERP systems tailored for real estate and finance, integrating accounting, operations, and resource management.",
@@ -27,7 +25,6 @@ const serviceCards = [
     image: "/images/digital/Automation.avif",
     label: "System Integration",
     title: "Systems Integration & Automation",
-    description: "",
     bullets: [
       "Enterprise systems connectivity to ensure seamless data flow across platforms.",
       "Workflow automation across operations, finance, and administration.",
@@ -41,7 +38,6 @@ const serviceCards = [
     image: "/images/digital/business.webp",
     label: "Optimization",
     title: "Business Process Optimization",
-    description: "",
     bullets: [
       "Detailed mapping and analysis of current processes to identify bottlenecks.",
       "Detection of inefficiencies causing time, resource, or financial waste.",
@@ -54,33 +50,36 @@ const serviceCards = [
 ];
 
 export default function DigitalSlider() {
+  const [firstSwiper, setFirstSwiper] = useState(null);
+  const [secondSwiper, setSecondSwiper] = useState(null);
+
   return (
     <div className="w-screen bg-[#e8e4d4] pb-26">
-      <div className="py-12 ">
-        <h2 className="text-3xl  md:text-4xl lg:text-5xl text-center text-[#c86e3b] mt-16 font-bold py-4">
+      <div className="py-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl main-head text-center text-[#c86e3b] mt-16 font-bold py-4">
           Digital and Operational Transformation
         </h2>
-        <p className="text-base md:text-lg lg:text-lg px-8 md:px-6  text-center text-black">
+        <p className="text-base md:text-lg lg:text-lg px-8 md:px-6 text-center text-black">
           We enhance our clients' operational efficiency through advanced
           technological
-          <br/>
+          <br />
           solutions, process automation, and organizational optimization.
         </p>
       </div>
-      <div className="w-full py-10 ">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          // pagination={{ clickable: true }}
-          spaceBetween={30}
-          slidesPerView={1}
-          loop={true}
-          className="w-[90%] max-w-[1400px] mx-auto rounded-3xl shadow-2xl bg-white"
-        >
-          {serviceCards.map((card, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col lg:flex-row overflow-hidden rounded-3xl shadow-4xl min-h-[530px]">
-                <div className="relative w-full lg:w-1/2 h-72 lg:h-auto">
+
+      <div className="w-[85%] max-w-[1400px] mx-auto bg-white shadow-2xl flex flex-col lg:flex-row overflow-hidden">
+        <div className="w-full lg:w-1/2 h-[300px] lg:h-auto relative">
+          <Swiper
+            modules={[Autoplay, Controller]}
+            onSwiper={setFirstSwiper}
+            controller={{ control: secondSwiper }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            loop={true}
+            className="h-full"
+          >
+            {serviceCards.map((card, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative w-full h-[300px] lg:h-full">
                   <Image
                     src={card.image}
                     alt={card.title}
@@ -91,29 +90,44 @@ export default function DigitalSlider() {
                     {card.label}
                   </div>
                 </div>
-                <div className="p-10 w-full lg:w-1/2 bg-white text-white flex flex-col justify-between">
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="w-full lg:w-1/2 p-10 bg-white">
+          <Swiper
+            modules={[Autoplay, Controller]}
+            onSwiper={setSecondSwiper}
+            controller={{ control: firstSwiper }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            loop={true}
+            className="h-full"
+          >
+            {serviceCards.map((card, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col justify-between h-full">
                   <div>
                     <h2 className="text-2xl md:text-3xl lg:text-3xl playfair font-bold mb-4 text-[#c86e3b]">
                       {card.title}
                     </h2>
-                    {/* <p className="text-lg mb-4">{card.description}</p> */}
                     <ul className="space-y-3 text-base text-black">
                       {card.bullets.map((point, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <IoIosCheckmarkCircleOutline className="text-white-400 mt-1 text-xl shrink-0" />
+                          <IoIosCheckmarkCircleOutline className="text-[#c86e3b] mt-1 text-xl shrink-0" />
                           <p>{point}</p>
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div className="pt-10">
-                  <SwiperBtn cta={card.cta} />
+                    <SwiperBtn cta={card.cta} />
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
