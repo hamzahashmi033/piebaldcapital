@@ -15,31 +15,31 @@ const Footer = () => {
         playsInline
         
       />
-      <div className="absolute inset-0 bg-[#c86e3b] opacity-30 z-10 "></div>
+      <div className="absolute inset-0 bg-[#f0eee8] opacity-30 z-10 "></div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="border-b border-gray-600 pb-12 mb-12 grid md:grid-cols-3 lg:grid-cols-5 gap-8  md:gap-6 lg:gap-8 text-center md:text-left">
           <div className="col-span-2 md:col-span-1">
-            <h4 className="text-2xl font-bold mb-2">AWARDS</h4>
+            <h4 className="text-2xl font-bold mb-2">Best Sales</h4>
             <div className="text-sm">
               <p>x2 Nominee</p>
             </div>
           </div>
           <div>
             <h4 className="text-2xl font-bold mb-2">10x Awards</h4>
-            <p className="text-sm">Site of the Day</p>
+            <p className="text-sm">Best Brand Activation</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold mb-2">10x Awards</h4>
-            <p className="text-sm">Mobile Excellence</p>
+            <p className="text-sm">Top Cost Controller</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold mb-2">3x Awards</h4>
-            <p className="text-sm">Site of the Day</p>
+            <p className="text-sm">Iconic Design</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold mb-2">37x Awards</h4>
-            <p className="text-sm">Honorable Mention</p>
+            <p className="text-sm">Design Excellence</p>
           </div>
         </div>
         <div className="border border-gray-600 pb-12 mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

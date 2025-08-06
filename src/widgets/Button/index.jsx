@@ -12,21 +12,21 @@ const Button = ({ text, href = "#", widthFull = false }) => {
               viewBox="0 0 16 16"
               fill="black"
               xmlns="http://www.w3.org/2000/svg"
-              // color="black"
+            // color="black"
             >
               <path
                 d="M4.66669 11.3334L11.3334 4.66669"
                 stroke="black"
-                stroke-width="1.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.33333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M4.66669 4.66669H11.3334V11.3334"
                 stroke="black"
-                stroke-width="1.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.33333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>

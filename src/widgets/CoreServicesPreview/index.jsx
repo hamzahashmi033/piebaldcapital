@@ -26,47 +26,51 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 const CoreServicesPreview = () => {
     useGSAP(() => {
         // Split the text into characters
+        let mm = gsap.matchMedia();
         gsap.set(".service-card, .bullet-point", { opacity: 1, y: 0 });
-        gsap.set(".head2", {
-            y: 100,
-            opacity: 0,
-            // skewY: 8,
-            clipPath: "inset(100% 0% 0% 0%)"
-        });
-
-        gsap.to(".head2", {
-            y: 0,
-            opacity: 1,
-            skewY: 0,
-            clipPath: "inset(0% 0% 0% 0%)",
-            duration: 1.4,
-            ease: "power4.out",
-            scrollTrigger: {
-                trigger: ".coreservicespreview",
-                start: "top 75%",
-                end: "bottom 30%",
-                toggleActions: "play none none none"
-            }
-        });
+        mm.add("(min-width: 800px)", () => {
 
 
-        gsap.from(".bullet-point, .service-card", {
-            y: 100,
-            opacity: 0,
-            duration: 0.3,
-            stagger: {
-                each: 0.2,
-                from: "center" // or "random", or "edges"
-            },
-            ease: "back.out(1.2)",
-            scrollTrigger: {
-                trigger: ".bullet-container",
-                start: "top 70%",
-                end: "bottom 30%",
-                // markers: true,
-            }
-        });
+            gsap.set(".head2", {
+                y: 100,
+                opacity: 0,
+                // skewY: 8,
+                clipPath: "inset(100% 0% 0% 0%)"
+            });
 
+            gsap.to(".head2", {
+                y: 0,
+                opacity: 1,
+                skewY: 0,
+                clipPath: "inset(0% 0% 0% 0%)",
+                duration: 1.4,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: ".coreservicespreview",
+                    start: "top 75%",
+                    end: "bottom 30%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+
+            gsap.from(".bullet-point, .service-card", {
+                y: 100,
+                opacity: 0,
+                duration: 0.3,
+                stagger: {
+                    each: 0.2,
+                    from: "center" // or "random", or "edges"
+                },
+                ease: "back.out(1.2)",
+                scrollTrigger: {
+                    trigger: ".bullet-container",
+                    start: "top 70%",
+                    end: "bottom 30%",
+                    // markers: true,
+                }
+            });
+        })
     }, []);
     return (
         <>

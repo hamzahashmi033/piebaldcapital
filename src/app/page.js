@@ -3,7 +3,7 @@ import React from "react";
 
 import Header from '@/widgets/Header';
 import Banner from '@/widgets/Banner';
-import './styles.css';
+
 import ScrollContext from '@/context/SmoothScrollContext';
 import CoreServicesPreview from '@/widgets/CoreServicesPreview';
 import Map from '@/widgets/Map';
@@ -19,7 +19,7 @@ import ContactUs from "@/widgets/ContactUs1/ContactUs";
 
 export default function App() {
   return (
-    <>
+    <section className="overflow-x-hidden">
       <ScrollContext>
         <Header />
         <Banner />
@@ -30,10 +30,10 @@ export default function App() {
         <DigitalSlider />
         <About/>
         <IndustryInsights/>
-        <ContactSection />
+        {/* <ContactSection /> */}
         <ContactUs/>
         <Footer/>
       </ScrollContext>
-    </>
+    </section>
   );
 }
